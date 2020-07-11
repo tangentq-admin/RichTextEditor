@@ -75,8 +75,8 @@ android {
 }
 
 dependencies {
-    implementation "$mavenGroup:$richTextEditorCommonMavenArtifactId:$version"
-//    implementation project(":RichTextEditorCommon")
+    // implementation "$mavenGroup:$richTextEditorCommonMavenArtifactId:$version"
+    implementation project(":RichTextEditorCommon")
 
     implementation "net.dankito.utils:android-utils:$androidUtilsVersion", {
         exclude group: 'org.jetbrains.kotlin', module: 'kotlin-stdlib-jdk7'
